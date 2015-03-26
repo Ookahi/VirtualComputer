@@ -1,7 +1,8 @@
 //
 //  File:         Builder.cpp
 //
-//  Author:       Peter Maher
+//  Author:       Katherine Bradley
+//                Sanela Osmanovic
 //
 //  Description:  Non-inline member function definitions.
 //
@@ -31,22 +32,29 @@ void Builder::selectParts()
 }
 void Builder::comparePrices()
 {
+	cout << "Compare Prices" << endl;
 }
 void Builder::createUser()
 {
+	cout << "Create Users" << endl;
 }
 void Builder::login()
 {
+	cout << "Login" << endl;
 }
 void Builder::predictPeformance()
 {
+	cout << "Predict Performance" << endl;
 }
 void Builder::checkPartCompatibility()
 {
+	cout << "Check Part Compatibility" << endl;
 }
 void Builder::checkGameCompatibility()
 {
+	cout << "Check Game Compatbility" << endl;
 }
 void Builder::saveComputerToProfile()
 {
+	cout << "Save Computer to Profile" << endl;
 }
