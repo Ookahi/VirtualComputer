@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VirtualComputer", "VirtualComputer\VirtualComputer.vcxproj", "{A0988156-6C57-489F-8D13-07D42C11F9E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0988156-6C57-489F-8D13-07D42C11F9E3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A0988156-6C57-489F-8D13-07D42C11F9E3}.Debug|Win32.Build.0 = Debug|Win32
+		{A0988156-6C57-489F-8D13-07D42C11F9E3}.Release|Win32.ActiveCfg = Release|Win32
+		{A0988156-6C57-489F-8D13-07D42C11F9E3}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
