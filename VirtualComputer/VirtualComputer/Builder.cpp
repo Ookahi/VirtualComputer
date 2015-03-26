@@ -8,21 +8,16 @@
 #include "Builder.h"
 #include <fstream>
 
-/**
- *  Constructor
- */
-Builder::Builder(const std::string& n)
+using namespace std;
+
+
+Builder::Builder()
 {
     using namespace std;
-
-    setName(n);
 
     cout << "Builder constructor executed" << endl;
 }
 
-/**
- *  Destructor
- */
 Builder::~Builder()
 {
     using namespace std;
@@ -30,110 +25,28 @@ Builder::~Builder()
     cout << "Builder destructor executed" << endl;
 }
 
-/**
- *  Modifier function to set the name of the Builder
- */
-void Builder::setName(const std::string& n)
+void Builder::selectParts()
 {
-    name = n;
+    cout << "Select Parts"<< endl;
 }
-
-/**
- *  Display Builder information
- */
-void Builder::displayBuilder() const
+void Builder::comparePrices()
 {
-    using namespace std;
-
-    cout << "Builder's name: " << name << endl;
 }
-
-/**
- *  Add a new Customer
- */
-void Builder::addNewCust()
+void Builder::createUser()
 {
-   using namespace std;
-
-   cout << "Adding a new customer" << endl;
 }
-
-/**
- *  Display all existing customers
- */
-void Builder::displayCusts() const
+void Builder::login()
 {
-   using namespace std;
-
-   cout << "Displaying all existing customers" << endl;
 }
-
-/**
- *  Add an item (existing title)
- */
-void Builder::addItem()
+void Builder::predictPeformance()
 {
-    using namespace std;
-
-    cout << "Adding an item" << endl;
 }
-
-/**
- *  Add a new title
- */
-void Builder::addItemSpec()
+void Builder::checkPartCompatibility()
 {
-    using namespace std;
-
-    cout << "Add a new title" << endl;
 }
-
-/**
- *  Display all items
- */
-void Builder::displayAllItems() const
+void Builder::checkGameCompatibility()
 {
-   using namespace std;
-
-   cout << "Display all items" << endl;
 }
-
-/**
- *  Display a item specification
- */
-void Builder::displayItemSpec() const
+void Builder::saveComputerToProfile()
 {
-   using namespace std;
-
-   cout << "Display an item specification" << endl;
-}
-
-/**
- *  Display items with a specific title
- */
-void Builder::displayItems() const
-{
-    using namespace std;
-
-    cout << "Display items with a specified title" << endl;
-}
-
-/**
- *  Display all videos
- */
-void Builder::displayVideos() const
-{
-    using namespace std;
-
-    cout << "Display all videos" << endl;
-}
-
-/**
- *  Display all DVDs
- */
-void Builder::displayDVDs() const
-{
-   using namespace std;
-
-   cout << "Display all DVDs" << endl;
 }

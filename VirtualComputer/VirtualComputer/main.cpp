@@ -1,10 +1,3 @@
-//
-//  File:         main.cpp
-//
-//  Author:       Peter Maher
-//
-//  Description:  Driver application.
-//
 #include "Builder.h"
 #include <iostream>
 
@@ -22,7 +15,7 @@ int main()
 {
     using namespace std;
 
-    Builder s("Tower Records");
+    Builder s;
     char option;
 
     do {
@@ -46,15 +39,14 @@ char mainMenu()
 
     system("cls");
 
-    cout << "A) Add new customer\n\n"
-         << "B) Display Customers\n\n"
-         << "C) Add a new item (existing title)\n\n"
-         << "D) Add a new video specification\n\n"
-         << "E) Display all items\n\n"
-         << "F) Display a video specification\n\n"
-         << "G) Display items with specified title\n\n"
-         << "H) Display all videos\n\n"
-         << "I) Display all DVDs\n\n"
+    cout << "A) Select Parts\n\n"
+         << "B) Compare Prices\n\n"
+         << "C) Predit Performance\n\n"
+         << "D) Check Part Compatibility\n\n"
+         << "E) Check Game Compatibility\n\n"
+         << "F) Save Computer\n\n"
+         << "G) Login\n\n"
+         << "H) Create Account\n\n"
          << "Q) Quit\n\n" << endl;
 
     cout << "Enter option: ";
@@ -72,23 +64,21 @@ void selectOption(Builder& s, char option)
     using namespace std;
 
     switch (toupper(option)) {
-        case 'A': s.addNewCust();
+        case 'A': s.selectParts();
                   break;
-        case 'B': s.displayCusts();
+        case 'B': s.comparePrices();
                   break;
-        case 'C': s.addItem();
+        case 'C': s.predictPeformance();
                   break;
-        case 'D': s.addItemSpec();
+        case 'D': s.checkPartCompatibility();
                   break;
-        case 'E': s.displayAllItems();
+        case 'E': s.checkGameCompatibility();
                   break;
-        case 'F': s.displayItemSpec();
+        case 'F': s.saveComputerToProfile();
                   break;
-        case 'G': s.displayItems();
+        case 'G': s.login();
                   break;
-        case 'H': s.displayVideos();
-                  break;
-        case 'I': s.displayDVDs();
+        case 'H': s.createUser();
                   break;
         case 'Q': cout << "Quitting Application" << endl;
                   break;
